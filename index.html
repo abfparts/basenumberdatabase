@@ -8,8 +8,8 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sandstone/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.css">
     <link rel="stylesheet" href="index.css">
   </head>
  <body>
@@ -23,10 +23,14 @@
 </div>
     <div class="container">
         <table
+          id="table"
           data-toggle="table"
           data-url="index.json"
           data-pagination="true"
+          data-pagination-h-align="left"
+          data-pagination-detail-h-align="right"
           data-search="true"
+          data-search-align="left"
           data-show-columns="true"
           data-show-toggle="true"
           data-show-pagination-switch="true"
