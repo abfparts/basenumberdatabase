@@ -4,33 +4,47 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Hello, Bootstrap Table!</title>
+    <title>BNST</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.css">
   </head>
  <body>
- <div class="container">
-     
- 
-<table
-  data-toggle="table"
-  data-url="index.json"
-  data-pagination="true"
-  data-search="true">
-  <thead>
-    <tr>
-      <th data-sortable="true" data-field="DESCRIPTION">DESCRIPTION</th>
-      <th data-field="BASE_NUMBER">BASE_NUMBER</th>
-      <th data-field="ALT_BASE_NUMBER">ALT_BASE_NUMBER</th>
-    </tr>
-  </thead>
-</table>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Base Number Search Tool</h1> 
+        <p>This is a Base number search tool. It is a work in progress. I will be continuously adding base numbers. Having said that it will take some time but there are already over 800. Issues and omissions can be submitted at the github page <a href="https://github.com/abfparts/basenumberdatabase">https://github.com/abfparts/basenumberdatabase</a></p> 
+      </div> 
 </div>
+    <div class="container">
+        <table
+          data-toggle="table"
+          data-url="index.json"
+          data-pagination="true"
+          data-search="true"
+          data-show-columns="true"
+          data-show-toggle="true"
+          data-show-pagination-switch="true"
+          data-show-refresh="true"
+          data-key-events="true">
+        <thead>
+            <tr>
+              <th data-sortable="true" data-field="DESCRIPTION">DESCRIPTION</th>
+              <th data-field="BASE_NUMBER">BASE_NUMBER</th>
+              <th data-field="ALT_BASE_NUMBER">ALT_BASE_NUMBER</th>
+            </tr>
+        </thead>
+    </table>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>  This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</span>
+      </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.js"></script>
-    </body>
+</body>
 </html>
