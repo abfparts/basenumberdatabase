@@ -1,0 +1,11 @@
+.jumbotron-fluid {background-color: rgba(68, 105, 227, 0.90);
+    padding-bottom: 1em;
+    padding-top: 1.8em;
+    text-align: center;
+    width: 100%;
+            }
+
+.jumbotron-fluid p {color: whitesmoke;
+            }
+.jumbotron-fluid p a{color: rgba(227, 221, 68, 100);
+            }
